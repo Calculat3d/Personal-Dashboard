@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Dashboard</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Todo List</h2>
+            <form id="todo-form">
+                <input required id="todo-input" type="text" placeholder="Add a new task">
+                <button type="submit">Add</button>
+            </form>
+            <ul id="todo-list">
+                
+            </ul>
+        </section>
+
+        <section>
+            <h2>Upcoming</h2>
+            <ul id="upcoming-list">
+            </ul>
+        </section>
+
+        <section>
+            <h2>Deadlines</h2>
+            <form id="deadline-form">
+                <input required id="deadline-input" type="text" placeholder="Add a new deadline">
+                <input required id="deadline-course" type="text" placeholder="Course name">
+                <input required id="deadline-date" type="date">
+                <select required id="deadline-type">
+                    <option value="" disabled selected>Type</option>
+                    <option value="final-exam">Final Exam</option>
+                    <option value="assignment">Assignment</option>
+                    <option value="midterm-exam">Midterm Exam</option>
+                    <option value="project">Project</option>
+                </select>
+                <button type="submit">Add</button>
+            </form>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
